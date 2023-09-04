@@ -1,0 +1,205 @@
+@media (max-width:960px) {
+  .main {
+    margin: 3.1rem auto 8.8rem;
+  }
+  .container {
+    width: $md;
+  }
+  .container__inner {
+    padding: 0 4rem;
+  }
+  .main__title_h1 {
+    font-size: 3.2rem;
+  }
+  .main-header__subtitle {
+    font-size: 1.8rem;
+  }
+  .main .person {
+    margin: 0;
+  }
+  .main .person__name {
+    font-size: 1.4rem;
+  }
+  .main .person__position {
+    font-size: 1.4rem;
+  }
+  .main .illustration__signature {
+    font-size: 1.4rem;
+  }
+  .main .article {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+  .main .about__title {
+    margin-bottom: 2rem;
+  }
+  .main__title_h3 {
+    font-size: 2.2rem;
+  }
+  .main-about__list {
+    margin-bottom: 3.4rem;
+  }
+  .main-about__list-link {
+    font-size: 1.6rem;
+  }
+  .main .about__paragraph {
+    font-size: 1.4rem;
+  }
+  .main .quote-text {
+    font-size: 1.8rem;
+  }
+  .main .quote-wrap {
+    margin-bottom: 3.1rem;
+  }
+  .main__quote-text {
+    font-size: 1.8rem;
+  }
+  .main .illustration {
+    margin-bottom: 4.7rem;
+  }
+  .main-about {
+    margin-bottom: 10rem;
+  }
+  .main__list-title {
+    font-size: 1.6rem;
+  }
+  .main__list-item {
+    font-size: 1.4rem;
+  }
+  .main__list-note {
+    font-size: 1.4rem;
+  }
+  .main .accordion__button {
+    font-size: 1.8rem;
+  }
+  .main__list-wrap {
+    margin-bottom: 4.5rem;
+  }
+  .main__accordion-wrap .panel {
+    font-size: 1.4rem;
+  }
+  .main__accordion-wrap {
+    margin-bottom: 5.7rem;
+  }
+  .main__title_h2 {
+    font-size: 2.8rem;
+  }
+  .main-discussions__count {
+    font-size: 1.6rem;
+  }
+  .main-discussions .input-wrap__send {
+    font-size: 1.6rem;
+  }
+  .main .post__text {
+    font-size: 1.4rem;
+  }
+  .main .post__footer {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width:768px) {
+  .container__inner {
+    padding: 0 2rem;
+  }
+  .main .person-wrap {
+    justify-content: flex-start;
+  }
+  .main .illustration {
+    margin-bottom: 4.7rem;
+  }
+  .main .accordion__button {
+    display: flex;
+    align-items: center;
+  }
+  .main .person-image,
+  .post-avatar__img {
+    width: 40px;
+    height: 40px;
+    max-width: unset;
+  }
+  .main .post__author {
+    margin-right: 2rem;
+  }
+  .main .post__header {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width:420px) {
+  .container {
+    width: $sm;
+  }
+  .container__inner {
+    padding: 0 1rem;
+  }
+  .main__title_h1 {
+    font-size: 2.6rem;
+  }
+  .main-header__subtitle {
+    font-size: 1.6rem;
+  }
+  .main .person__name {
+    font-size: 1.2rem;
+  }
+  .main .person__position {
+    font-size: 1.2rem;
+  }
+  .main .illustration__signature {
+    font-size: 1.2rem;
+  }
+  .main .article {
+    font-size: 1.6rem;
+  }
+  .main__title_h3 {
+    font-size: 1.8rem;
+  }
+  .main-about {
+    margin-bottom: 5rem;
+  }
+  .main-about__list-link {
+    font-size: 1.4rem;
+  }
+  .main .about__paragraph {
+    font-size: 1.4rem;
+  }
+  .main .quote-text {
+    font-size: 1.6rem;
+  }
+  .main__quote-text {
+    font-size: 1.6rem;
+  }
+  .main__list-title {
+    font-size: 1.4rem;
+  }
+  .main__list-item {
+    font-size: 1.2rem;
+  }
+  .main__list-note {
+    font-size: 1.4rem;
+  }
+  .main .accordion__button {
+    font-size: 1.6rem;
+  }
+  .main__accordion-wrap .panel {
+    font-size: 1.4rem;
+  }
+  .main__title_h2 {
+    font-size: 2.4rem;
+  }
+  .main-discussions__count {
+    font-size: 1.4rem;
+  }
+  .main-discussions .input-wrap__send {
+    font-size: 1.2rem;
+  }
+  .main .post__text {
+    font-size: 1.2rem;
+  }
+  .main .post__footer {
+    font-size: 1.2rem;
+  }
+  .main .post__list_deep {
+    margin-left: 3em;
+  }
+}

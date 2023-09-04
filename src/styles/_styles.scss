@@ -1,0 +1,343 @@
+body {
+  color: $basic;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1024px;
+  width: $lg;
+  margin: 0 auto;
+  &__inner {
+    max-width: 722px;
+    margin: 0 auto;
+  }
+}
+
+
+.main {
+  margin: 35.1rem auto 8.8rem;
+  &__title {
+    &_h1 {
+      font-size: 4rem;
+    }
+    &_h2 {
+      font-size: 3.2rem;
+      color: $accent;
+    }
+    &_h3 {
+      font-size: 2.6rem;
+      color: $accent;
+    }
+  }
+  &-header {
+    margin-bottom: 3.3rem;
+    &__title {
+      margin-bottom: 3.2rem;
+    }
+    &__subtitle {
+      font-size: 2.2rem;
+    }
+  }
+  .person {
+    display: flex;
+    margin: 0 18.3rem 0 auto;
+    &-wrap {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 3.2rem;
+    }
+    &-image {
+      margin-right: .6rem;
+    }
+    &__name {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: .4rem;
+    }
+    &__position {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+  .illustration {
+    border-bottom: 1px solid $basic;
+    opacity: 0.8;
+    margin-bottom: 7.7rem;
+    &__signature {
+      font-size: 1.6rem;
+      opacity: 0.6;
+      margin: 1.1rem 0;
+    }
+  }
+  .article {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 5rem;
+  }
+  &-about {
+    margin-bottom: 15rem;
+    &__title {
+      margin-bottom: 3.7rem;
+    }
+    &__list {
+      margin-bottom: 5.4rem;
+      &-item {
+        &:first-child{
+          margin-bottom: 1.6rem;
+        }
+      }
+      &-link {
+        font-size: 2rem;
+        color: $blue;
+        border-bottom: 1px solid $blue;
+      }
+    }
+    &__span {
+      background-color: $lightBlue;
+    }
+  }
+  .about {
+    &__title {
+      margin-bottom: 2.8rem;
+    }
+    &__paragraph {
+      font-size: 1.8rem;
+      margin-bottom: 2.8rem;
+      font-family: 'Noto Serif', serif;
+      &__link {
+        color: $blue;
+        text-decoration: underline;
+      }
+      &_decoration {
+        position: relative;
+        margin-left: 2.4rem;
+        margin-bottom: 2.1rem;
+        &:before {
+          content: '';
+          width: 2px;
+          min-height: 100%;
+          background-color: $blue;
+          display: block;
+          position: absolute;
+          left: -2rem;
+        }
+      }
+      &_italic {
+        font-style: italic;
+        margin-bottom: 4.2rem;
+      }
+    }
+  }
+  .quote {
+    &-wrap {
+      background-color: $lightBlue;
+      padding: 3.1rem 0 3.8rem;
+      margin-bottom: 5.1rem;
+      border-radius: 1rem;
+    }
+    .person {
+      margin-bottom: 2.8rem;
+    }
+    &-text {
+      font-size: 2.2rem;
+    }
+  }
+  &__quote {
+    padding: 5.6rem 0 4rem;
+    border: 1px solid #2BD5DF;
+    border-image: linear-gradient(to right top, #2BD5DF, #3A4A93, #CC87FA);
+    border-image-slice: 1;
+    margin-bottom: 5.6rem;
+    &-text {
+      font-size: 2.2rem;
+    }
+    &-content {
+      margin-bottom: 3.3rem;
+    }
+  }
+  &__list {
+    padding-left: 1.6rem;
+    &-wrap {
+      margin-bottom: 6.5rem;
+    }
+    &-title {
+      font-size: 2rem;
+      color: $blue;
+      margin-bottom: 3.2rem;
+    }
+    &-item {
+      margin-bottom: 1.6rem;
+      font-size: 1.8rem;
+    }
+    &-note {
+      font-size: 1.8rem;
+      &__span {
+        font-weight: 700;
+      }
+    }
+  }
+  &__accordion {
+    &-wrap {
+      background-color: $lightBlue;
+      padding: 3.2rem;
+      margin-bottom: 9.7rem;
+      border-radius: 1rem;
+      .panel {
+        font-size: 1.6rem;
+        padding: 0 1rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+      }
+    }
+  }
+  .accordion {
+    &__button {
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 2.2rem;
+      transition: 0.4s all ease;
+      &:after {
+        content: url("../images/icon/arrow.svg");
+        float: right;
+        margin-left: 5px;
+        transition: all .3s ease;
+      }
+    }
+    &__button.active {
+      background-color: $lightBlue;
+      transition: 0.4s all ease;
+      &:after {
+        content: url("../images/icon/arrow.svg");
+        transform: rotate(180deg);
+        transition: all .3s ease;
+      }
+    }
+  }
+  &-discussions {
+    &__title {
+      margin-bottom: 4rem;
+    }
+    &__count {
+      font-size: 2rem;
+      opacity: .8;
+      margin-bottom: 3.2rem;
+    }
+    .input-wrap {
+      position: relative;
+      border: 1px solid $basic;
+      border-radius: 10px;
+      padding: 1.6rem 3.3rem 1.6rem 1.2rem;
+      min-height: 148px;
+      height: 100%;
+      margin-bottom: 4rem;
+      &__person {
+        margin-bottom: 1.5rem;
+      }
+      &__answer {
+        font-size: 1.6rem;
+        width: 100%;
+        padding-bottom: 6rem;
+      }
+      &__preview {
+        margin-bottom: 2rem;
+      }
+      &__buttons {
+        position: absolute;
+        right: 3.3rem;
+        bottom: 1.6rem;
+        display: flex;
+        align-items: center;
+      }
+      &__attach {
+        margin-right: 1.6rem;
+        cursor: pointer;
+        &-image {
+          display: none;
+        }
+      }
+      &__send {
+        background-color: $buttonBg;
+        border-radius: 5px;
+        color: $white;
+        font-size: 1.8rem;
+        font-weight: 700;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        transition: .3s all ease;
+        &:hover {
+          background-color: $blue;
+          transition: .3s all ease;
+        }
+      }
+    }
+  }
+  .post {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 4rem;
+    &-avatar {
+      margin-right: 1.2rem;
+      height: 100%;
+    }
+    &__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    &__author {
+      margin-right: 4rem;
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: $basic;
+    }
+    &__date {
+      font-size: 1.4rem;
+      opacity: .4;
+    }
+    &__text {
+      font-size: 1.6rem;
+      margin-bottom: 2.1rem;
+    }
+    &__footer {
+      font-size: 1.6rem;
+      opacity: .8;
+      display: flex;
+      align-items: center;
+    }
+    &__reply {
+      margin-right: 4.2rem;
+    }
+    &-count-wrap {
+      display: flex;
+      align-items: center;
+    }
+    &-count {
+      margin: 0 1.2rem;
+      &_more,
+      &_less {
+        content: '';
+        background-image: url("../images/icon/arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        width: 2.7rem;
+        height: 2.7rem;
+        cursor: pointer;
+      }
+      &_more {
+        transform: rotate(180deg);
+      }
+    }
+    &__list {
+      &_deep {
+        margin-left: 5em;
+      }
+    }
+  }
+
+}
